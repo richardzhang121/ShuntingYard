@@ -16,6 +16,7 @@ int main(){
   cin.get(input, 50); //gets input
   shuntingYard(input);
 }
+
 Stack* shuntingYard(char* input){ //starts the shunting yard
   int i = 0;
   Stack* operatorStack = new Stack(); 
@@ -77,5 +78,4 @@ int precedence(char c){ // creates precedence according to pemdas
   precedence['^'] = 3;
   precedence['('] = -1;
   return precedence[c];
-}
 }
